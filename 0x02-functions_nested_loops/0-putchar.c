@@ -1,5 +1,3 @@
-#include <unistd.h>
-#include <stdio.h>
 #include "main.h"
 /**
  * main - print _putchar
@@ -8,16 +6,15 @@
  */
 
 
-int main()
+int main(void)
 {
-	_putchar(95);
-	_putchar(112);
-	_putchar(117);
-	_putchar(116);
-	_putchar(99);
-	_putchar(104);
-	_putchar(97);
-	_putchar(114);
-	putchar('\n');	
+	char string[] ="_putchar";
+	int i = 0;
+	while (string [i])
+	{
+		_putchar(string[i]);
+		i++;
+	}
+	_putchar('\n');
 	return(0);
 }
