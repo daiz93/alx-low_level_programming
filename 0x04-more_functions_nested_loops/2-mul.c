@@ -4,7 +4,7 @@
 /**
  * mul - check if c is digit
  * @a: first number
- * @b; second number
+ * @b: second number
  * Return: result of multiplication of a and b
  */
 
