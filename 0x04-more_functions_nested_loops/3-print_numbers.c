@@ -3,16 +3,14 @@
 
 /**
  * print_numbers - check if c is digit
- * @a: first number
- * @b: second number
- * Return: always return 0;
+ * Return: anything.
  */
 
 void print_numbers(void)
 {
 	int i = 0;
 
-	for(i = 0; i < 10; i++)
+	for (i = 0; i < 10; i++)
 	{
 		_putchar(i + 48);
 	}
