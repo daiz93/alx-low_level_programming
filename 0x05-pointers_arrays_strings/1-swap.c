@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * swap_int - a function tha sawp int 
+ * swap_int - a function tha sawp int
  *
  * @a: int 1
  * @b: int 2
