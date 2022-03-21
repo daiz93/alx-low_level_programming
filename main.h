@@ -4,5 +4,5 @@
 #include <stdio.h>
 
 void positive_or_negative(int i);
-
+void print_number(int n);
 #endif /* MAIN_H */
