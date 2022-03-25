@@ -23,4 +23,4 @@ int main(void)
     printf("%s", s2);
     printf("%s", ptr);
     return (0);
-sh: 1: q: not found
+}
