@@ -21,5 +21,8 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
-	return (found);
+	if *found == NULL
+		return (NULL);
+	else
+		return (found);
 }
