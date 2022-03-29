@@ -10,14 +10,15 @@
 char *_strchr(char *s, char c)
 {
 	int i = 0;
-	char *found;
-	*found = NULL;
+	char *found = NULL;
 
 	while (s[i] != '\0')
 	{
 		if (s[i] == c)
+		{
 			found = &s[i];
 			break;
+		}
 		i++;
 	}
 	return (found);
