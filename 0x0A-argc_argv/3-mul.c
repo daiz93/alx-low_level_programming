@@ -5,7 +5,7 @@
  * @argc: number of arguments
  * @argv: array of arguments
  *
- * Return: Always 0 (Success)
+ * Return: Always 1 (Success)
  */
 
 int main(int argc, char *argv[])
@@ -14,18 +14,18 @@ int main(int argc, char *argv[])
 
 	if (argc !=3 )
 	{
-		printf("erreur");
+		printf("Error");
 	}
 	else
 	{
 		if (isdigit(argv[1]) && isdigit(argv[2]))
 		{
-			printf("%d", argv[1] * argv[2];
+			printf("%d\n", argv[1] * argv[2];
 		}
 		else
 		{
-			printf("Erreur");
+			printf("Error");
 		}
 	}
-	return (0);
+	return (1);
 }
