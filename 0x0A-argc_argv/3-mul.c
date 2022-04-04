@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 
 /**
  * main - a program that prints all arguments it receives.
@@ -10,22 +11,14 @@
 
 int main(int argc, char *argv[])
 {
-	int i = 0;
 
-	if (argc !=3 )
+	if (argc = 3 && isdigit(arv[1) && isdigit(argv[2]))
 	{
-		printf("Error");
+		printf("%d\n", argv[1] * argv[2];
 	}
 	else
 	{
-		if (isdigit(argv[1]) && isdigit(argv[2]))
-		{
-			printf("%d\n", argv[1] * argv[2];
-		}
-		else
-		{
-			printf("Error");
-		}
+		printf("Error");
 	}
 	return (1);
 }
