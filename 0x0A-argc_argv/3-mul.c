@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 
-	if (argc = 3 && isdigit(arv[1) && isdigit(argv[2]))
+	if (argc == 3 && isdigit(arv[1) && isdigit(argv[2]))
 	{
 		printf("%d\n", argv[1] * argv[2];
 	}
