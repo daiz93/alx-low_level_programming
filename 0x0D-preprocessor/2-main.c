@@ -1,7 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
 #include "main.h"
-#endif
+
 /**
  * main - prints the name of the program
  * @argc: number of arguments
