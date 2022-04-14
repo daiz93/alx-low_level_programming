@@ -5,31 +5,31 @@
 
 
 /**
- * sum_them_all -  a function that prints numbers, followed by a new line.
- * @eparator: char, require parameter, is separator
+ * print_numbers -  a function that prints numbers, followed by a new line.
+ * @separator: char, require parameter, is separator
  * @n: unsigned int, require parameter
- * @...: undefine parameter
  * Return: int, 0 if n == 0
  */
 
-void print_numbers(const char *separator, const unsigned int n, ...)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
 	unsigned int i;
-	int num;
+	char *num;
 
 	if (n == 0)
 		return;
-
+	if (separator == NULL)
+		return;
 	va_start(ap, n);
 	for (i = 0; i < n ; i++)
 	{
-		num = va_arg(ap, int);
+		*num = va_arg(ap, int);
 		if (i > 0 && separator != NULL)
 		{	
 			_putchar(*separator);
 		}
-		printf("%d", num);
+		printf("%s", *num);
 		
 	}	
 	va_end(ap);
