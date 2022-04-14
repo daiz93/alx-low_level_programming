@@ -5,7 +5,7 @@
 
 
 /**
- * print_numbers -  a function that prints numbers, followed by a new line.
+ * print_strings -  a function that prints numbers, followed by a new line.
  * @separator: char, require parameter, is separator
  * @n: unsigned int, require parameter
  * Return: int, 0 if n == 0
@@ -29,7 +29,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{	
 			_putchar(*separator);
 		}
-		printf("%s", *num);
+		_putchar(*num);
 		
 	}	
 	va_end(ap);
