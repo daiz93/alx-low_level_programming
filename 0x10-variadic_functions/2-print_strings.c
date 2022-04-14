@@ -31,7 +31,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			printf("(Nil)");			
+			printf("(Nil)");
 		}		
 	}
 	va_end(ap);
