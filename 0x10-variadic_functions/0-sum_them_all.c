@@ -6,7 +6,6 @@
 /**
  * sum_them_all - a function that returns the sum of all its parameters
  * @n: unsigned int, obligatoire parameter
- * @...: undefine parameter
  * Return: int, 0 if n == 0
  */
 
