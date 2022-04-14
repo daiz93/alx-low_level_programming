@@ -22,7 +22,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(ap, n);
 	for (i = 0; i < n ; i++)
 	{
-		str = va_arg(ap, char *)
+		str = va_arg(ap, char *);
 		if (str != NULL)
 		{
 			if (i > 0 && separator != NULL)
@@ -33,7 +33,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		else
 		{
-			printf('(Nil)');			
+			printf("(Nil)");			
 		}		
 	}
 	va_end(ap);
