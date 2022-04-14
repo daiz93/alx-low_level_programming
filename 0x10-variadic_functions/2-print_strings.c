@@ -3,7 +3,6 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 
-
 /**
  * print_strings -  a function that prints numbers, followed by a new line.
  * @separator: char, require parameter, is separator
@@ -31,8 +30,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (i != (n - 1) && separator != NULL)
 			printf("%s", separator);
 	}
-
 	printf("\n");
-
 	va_end(strings);
 }
