@@ -2,13 +2,18 @@
 #include <stdio.h>
 #include <stdarg.h>
 
+void print_char(va_list arg);
+void print_int(va_list arg);
+void print_float(va_list arg);
+void print_string(va_list arg);
+void print_all(const char * const format, ...);
 
 /**
- * _print_char - Prints a char.
+ * print_char - Prints a char.
  * @arg: A list of arguments pointing to
  *       the character to be printed.
  */
-void _print_char(va_list arg)
+void print_char(va_list arg)
 {
 	char letter;
 
@@ -17,11 +22,11 @@ void _print_char(va_list arg)
 }
 
 /**
- * _print_int - Prints an int.
+ * print_int - Prints an int.
  * @arg: A list of arguments pointing to
  *       the integer to be printed.
  */
-void _print_int(va_list arg)
+void print_int(va_list arg)
 {
 	int num;
 
@@ -30,11 +35,11 @@ void _print_int(va_list arg)
 }
 
 /**
- * _print_float - Prints a float.
+ * print_float - Prints a float.
  * @arg: A list of arguments pointing to
  *       the float to be printed.
  */
-void _print_float(va_list arg)
+void print_float(va_list arg)
 {
 	float num;
 
@@ -43,11 +48,11 @@ void _print_float(va_list arg)
 }
 
 /**
- * _print_string - Prints a string.
+ * print_string - Prints a string.
  * @arg: A list of arguments pointing to
  *       the string to be printed.
  */
-void _print_string(va_list arg)
+void print_string(va_list arg)
 {
 	char *str;
 
@@ -77,10 +82,10 @@ void print_all(const char * const format, ...)
 	int i = 0, j = 0;
 	char *separator = "";
 	printer_t funcs[] = {
-		{"c", _print_char},
-		{"i", _print_int},
-		{"f", _print_float},
-		{"s", _print_string}
+		{"c", print_char},
+		{"i", print_int},
+		{"f", print_float},
+		{"s", print_string}
 	};
 
 	va_start(args, format);
