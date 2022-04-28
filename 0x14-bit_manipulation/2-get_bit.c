@@ -11,12 +11,17 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-        unsigned long int bit;
+        unsigned long int divisor, check;
 
-        if (index > 64)
+        if (index > (sizeof(unsigned long int) * 8 - 1))
+        {
                 return (-1);
-
-        bit = n >> index;
-
-        return (bit & 0x1);
+        }
+        divisor = 1 << index;
+        check = n & divisor;
+        if (check == divisor)
+        {
+                return (1);
+        }
+        return (0);
 }
