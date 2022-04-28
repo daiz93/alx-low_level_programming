@@ -16,7 +16,6 @@ void print_binary(unsigned long int n)
         if (n == 0)
         {
                 _putchar('0');
-                _putchar('\n');
         }
         while (position > 0)
         {
@@ -29,7 +28,6 @@ void print_binary(unsigned long int n)
                         _putchar('1');
                         flag = 1;
                 }
-                _putchar('\n');
                 position = position >> 1;
         }
 }
