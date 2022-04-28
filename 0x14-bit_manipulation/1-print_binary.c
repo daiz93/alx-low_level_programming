@@ -14,18 +14,22 @@ void print_binary(unsigned long int n)
 
         position <<= 63;
         if (n == 0)
+        {
                 _putchar('0');
-
+                _putchar('\n');
+        }
         while (position > 0)
         {
                 if ((n & position) == 0 && flag == 1)
+                {
                         _putchar('0');
+                }
                 if ((n & position) != 0)
                 {
                         _putchar('1');
                         flag = 1;
                 }
-
+                _putchar('\n');
                 position = position >> 1;
         }
 }
