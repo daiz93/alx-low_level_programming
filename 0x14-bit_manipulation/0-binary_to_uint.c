@@ -49,8 +49,7 @@ unsigned int _len(const char *c)
  * Return: nsigned int, converted number (success), 0(faild)
  */
 
-unsigned int
-binary_to_uint(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
         unsigned int i = 0;
         unsigned int result = 0;
