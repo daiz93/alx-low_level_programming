@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _len - get power of 2
+ * puissance2 - get power of 2
  * @i: number of mul 2
  *
  * Return: power
@@ -22,7 +22,7 @@ int puissance2(unsigned int i)
 	}
 }
 /**
- * _len - get length of string
+ * len - get length of string
  * @c: string
  *
  * Return: len
@@ -41,6 +41,7 @@ unsigned int _len(const char *c)
 	}
 	return (i);
 }
+
 /**
  * binary_to_uint - function that converts a binary
  * number to an unsigned int
