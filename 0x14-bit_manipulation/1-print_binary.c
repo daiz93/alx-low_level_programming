@@ -9,25 +9,25 @@
 
 void print_binary(unsigned long int n)
 {
-        int flag = 0;
-        unsigned long int position = 1;
+	int flag = 0;
+	unsigned long int position = 1;
 
-        position <<= 63;
-        if (n == 0)
-        {
-                _putchar('0');
-        }
-        while (position > 0)
-        {
-                if ((n & position) == 0 && flag == 1)
-                {
-                        _putchar('0');
-                }
-                if ((n & position) != 0)
-                {
-                        _putchar('1');
-                        flag = 1;
-                }
-                position = position >> 1;
-        }
+	position <<= 63;
+	if (n == 0)
+	{
+		_putchar('0');
+	}
+	while (position > 0)
+	{
+		if ((n & position) == 0 && flag == 1)
+		{
+			_putchar('0');
+		}
+		if ((n & position) != 0)
+		{
+			_putchar('1');
+			flag = 1;
+		}
+		position = position >> 1;
+	}
 }
