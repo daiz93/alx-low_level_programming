@@ -11,16 +11,17 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-        unsigned int flip_bit = 0, comp, comp1;
+        unsigned long int diff, check;
+        unsigned int count, i;
 
-        while (!(n == 0 && m == 0))
+        count = 0;
+        check = 1;
+        diff = n ^ m;
+        for (i = 0; i < (sizeof(unsigned long int) * 8); i++)
         {
-                comp = n & 1;
-                comp1 = m & 1;
-                n = n >> 1;
-                m = m >> 1;
-                if (comp != comp1)
-                        flip_bit += 1;
+                if (check == (diff & check))
+                        count++;
+                check <<= 1;
         }
-        return (flip_bit);
+        return (count);
 }
