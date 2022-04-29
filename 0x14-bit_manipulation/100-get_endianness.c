@@ -9,8 +9,8 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-        unsigned int x = 1;
-        char *c = (char *)&x;
+	unsigned int x = 1;
+	char *c = (char *)&x;
 
-        return ((int)*c);
+	return ((int)*c);
 }
